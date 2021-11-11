@@ -271,13 +271,14 @@
       </section>
 
       <footer>
-        <p>All right reserve Chigozie Ugwuede Portfolio &copy;2020</p>
+        <p>All right reserve Chigozie Ugwuede Portfolio &copy;<span id="current_year"></span></p>
       </footer>
     </div>
   </body>
   <script>
     const checkBox = document.querySelector(".toggler");
     const navList = document.querySelectorAll(".mobile__links li a");
+const currentYear = document.querySelector("#current_year");
 
     Array.from(navList).forEach((menu) => {
       menu.addEventListener("click", () => {
@@ -286,5 +287,6 @@
         }
       });
     });
+ currentYear.innerText = new Date().getFullYear().toString()
   </script>
 </html>
