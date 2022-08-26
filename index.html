@@ -28,11 +28,33 @@
             <img src="img//profile-img.jpg" alt="profile image" />
           </div>
           <div class="discription">
-            <h2>Hello, I am Chigozie Ugwuede</h2>
+            <h2 class="bold__healding">
+              Hi <span class="emoji__wave">👋</span>
+              <span class="sub__heading">I am Chigozie</span>
+            </h2>
             <p>
-              Results-driven and self-motivated full stack web developer.
+              Results-driven and self-motivated full stack web developer. <br />
               React.js and Node.js Enthusiast
             </p>
+            <div class="header__actions">
+              <div class="social__networks">
+                <a href="https://github.com/sparkydman" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://facebook.com/calist23" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:gozieugwuede@gmail.com">
+                  <i class="fab fa-google-plus"></i>
+                </a>
+              </div>
+              <ul class="destop__links">
+                <li><a href="#skills" class="active__link">My Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -320,11 +342,11 @@
     </div>
   </body>
   <script>
-    const checkBox = document.querySelector(".toggler");
-    const navList = document.querySelectorAll(".mobile__links li a");
+    const checkBox = document.querySelector('.toggler');
+    const navList = document.querySelectorAll('.mobile__links li a');
 
     Array.from(navList).forEach((menu) => {
-      menu.addEventListener("click", () => {
+      menu.addEventListener('click', () => {
         if (checkBox.checked === true) {
           checkBox.checked = false;
         }
