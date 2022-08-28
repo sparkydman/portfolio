@@ -187,12 +187,16 @@ section h3 {
   height: 45px;
   border-radius: 15px;
 }
+.skill__wrapper {
+  opacity: 0;
+}
 .flex__container {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .work__card {
+  opacity: 0;
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
   height: auto;
@@ -237,6 +241,7 @@ section h3 {
   text-align: center;
 }
 .full__resume {
+  opacity: 0;
   display: inline-block;
   color: var(--accent);
   font-family: 'Nunito';
@@ -326,6 +331,9 @@ footer {
 .email__contact > div > a {
   background: var(--accent);
   color: var(--text);
+}
+.email__contact_wrapper {
+  opacity: 0;
 }
 
 @-webkit-keyframes identifier {
