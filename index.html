@@ -11,13 +11,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
-      integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./main.js"></script>
+
     <title>Chigozie Ugwuede portfolio</title>
   </head>
   <body>
@@ -25,7 +23,7 @@
       <header class="top__header">
         <div class="header__container">
           <div class="img__div">
-            <img src="img//profile-img.jpg" alt="profile image" />
+            <img src="img/profile-img.jpg" alt="profile image" />
           </div>
           <div class="discription">
             <h2 class="bold__healding">
@@ -88,7 +86,7 @@
       </nav>
       <section id="skills">
         <h3>Tools I Use</h3>
-        <div>
+        <div class="skill__wrapper">
           <ul>
             <li>
               <div class="skill__item">
@@ -304,7 +302,7 @@
         </div>
 
         <div class="email__contact">
-          <div>
+          <div class="email__contact_wrapper">
             <p>gozieugwuede@gmail.com</p>
             <a href="mailto:gozieugwuede@gmail.com">Say Hi👋</a>
           </div>
@@ -316,18 +314,4 @@
       </footer>
     </div>
   </body>
-  <script>
-    const checkBox = document.querySelector('.toggler');
-    const navList = document.querySelectorAll('.mobile__links li a');
-    const currentYear = document.querySelector('#current_year');
-
-    Array.from(navList).forEach((menu) => {
-      menu.addEventListener('click', () => {
-        if (checkBox.checked === true) {
-          checkBox.checked = false;
-        }
-      });
-    });
-    currentYear.innerText = new Date().getFullYear().toString();
-  </script>
 </html>
